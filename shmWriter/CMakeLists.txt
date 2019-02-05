@@ -8,3 +8,9 @@ set(SHMWRITER_FILES
 
 
 add_executable(shmwriter ${SHMWRITER_FILES})
+
+
+target_link_libraries(
+        shmwriter
+        glog
+)

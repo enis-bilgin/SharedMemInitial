@@ -8,3 +8,8 @@ set(SHMREADER_FILES
 
 
 add_executable(shmreader ${SHMREADER_FILES})
+
+target_link_libraries(
+        shmreader
+        glog
+)
